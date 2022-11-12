@@ -1,0 +1,24 @@
+let resolvedFunction = null
+
+const promise = Promise.resolve(10);
+const promise2 = Promise.resolve(20); 
+
+promise.then(function first(value) {throw "New Error"});
+
+promise.then(function second(value) {
+  console.log('2 ' + value);
+  resolvedFunction(value * value)
+})
+
+promise2.then(function foo(){});
+
+
+const newPromise = new Promise(function third(resolve) {
+  console.log("3");
+  resolvedFunction = resolve;
+});
+
+newPromise.then(function forth(value) {console.log("4  " + value)});
+
+
+https://www.jsv9000.app/

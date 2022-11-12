@@ -1,0 +1,14 @@
+
+
+li{
+    list-style: none;
+}
+
+input:checked + span{
+    text-decoration: line-through;
+}
+
+span:last-child{
+    color: red;
+    cursor: pointer;
+}

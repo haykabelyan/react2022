@@ -1,0 +1,9 @@
+npm install @reduxjs/toolkit react-redux
+1. store
+2. Provider store={store} in index.js
+3. todos hanenk App.js-ic /addTodo jnjenk, removeTodo ev toggleTodoComplete toxenk datart/
+4. TodoList.js props-ic hanenk todos@ ev avelacnenk useSelector
+5. TodoList.js props-ic hanenk removeTodo, toggleTodoComplete
+6. App.js addTask functon@ addTodo-i hamar
+7. TodoItem.js import removeTodo, toggleComplete
+8. chrome redux devtools
